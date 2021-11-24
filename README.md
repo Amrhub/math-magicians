@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Math Magicians - Calculator User Interface
+> Math Magicians - Calculator User Interface & functionality
 
 ![screenshot](./app_screenshot.png)
 This is just a simple calculator user interface that I built using the [React](https://reactjs.org/) framework.
