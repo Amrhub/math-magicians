@@ -52,32 +52,14 @@ $cell-height: 70px;
         }
       }
 
-      &:last-child > * {
-        border-bottom: none;
-      }
-    }
+      &:last-child {
+        .calculator__keypad-key:nth-child(1) {
+          grid-column: 1 / 3;
+        }
 
-    &-row:nth-child(1) {
-      grid-row: 1;
-    }
-
-    &-row:nth-child(2) {
-      grid-row: 2;
-    }
-
-    &-row:nth-child(3) {
-      grid-row: 3;
-    }
-
-    &-row:nth-child(4) {
-      grid-row: 4;
-    }
-
-    &-row:nth-child(5) {
-      grid-row: 5;
-
-      .calculator__keypad-key:nth-child(1) {
-        grid-column: 1 / 3;
+        & > * {
+          border-bottom: none;
+        }
       }
     }
   }
