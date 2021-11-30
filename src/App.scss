@@ -28,6 +28,11 @@ $yellow-color: #efed18;
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   display: flex;
   flex-direction: column;
