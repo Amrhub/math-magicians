@@ -1,9 +1,11 @@
 import React from 'react';
 import Calculator from './components/Calculator';
 import './App.scss';
+import Navbar from './components/Navbar';
 
 const App = () => (
-  <div className="App flex-center-center">
+  <div className="App">
+    <Navbar />
     <Calculator />
   </div>
 );
