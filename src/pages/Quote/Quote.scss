@@ -1,0 +1,19 @@
+$quote-width: 850px;
+
+.quote {
+  min-height: 100vh;
+
+  &-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: $quote-width;
+    text-align: center;
+  }
+  &-author {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+}

@@ -22,7 +22,7 @@ const Calculator = () => {
         Let&apos;s do some math!
       </h2>
       <div className="calculator flex-col-center">
-        <div className="calculator__display">
+        <div className="calculator__display number-font-family">
           {operation == null
             ? total || next || '0'
             : `${total} ${operation} ${next == null ? ' ' : next}`}

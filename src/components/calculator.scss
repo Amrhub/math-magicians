@@ -24,6 +24,8 @@ $calculator-offset: 3rem;
   font-family: $primary-font-family;
   font-size: $primary-font-size;
   box-shadow: 0 0 10px $border-color;
+  border-radius: 10px;
+  overflow: hidden;
 
   &__display {
     display: flex;
