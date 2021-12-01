@@ -74,6 +74,7 @@ $yellow-color: #efed18;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     list-style: none;
+    margin-right: 1rem;
 
     .nav-link {
       color: $yellow-color;
@@ -83,10 +84,45 @@ $yellow-color: #efed18;
       letter-spacing: 0.1rem;
       padding: 0.5rem 1rem;
       text-decoration: none;
+      position: relative;
+      margin-left: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: $yellow-color;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        transition: 0.3s;
+      }
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .active {
+      background-color: $yellow-color;
+      color: $blue-color;
+
+      &:hover {
+        border-bottom: none;
+      }
     }
 
     .nav-link + .nav-link {
-      border-left: 1px solid $yellow-color;
+      &::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $yellow-color;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+      }
     }
   }
 }

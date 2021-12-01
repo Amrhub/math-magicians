@@ -8,12 +8,14 @@ $calculator-offset: 3rem;
 
 .calculator-container {
   width: calc(100% - #{$calculator-offset});
-  margin: auto $calculator-offset $calculator-offset auto;
+  margin: auto $calculator-offset $calculator-offset 1rem;
   display: flex;
 
   &__heading {
     flex: 1;
-    text-align: center;
+    font-size: 2rem;
+    font-family: $primary-font-family;
+    font-weight: bold;
   }
 }
 
