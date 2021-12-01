@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="navbar flex-sb-center">
@@ -7,15 +7,30 @@ const Navbar = () => (
 
     <ul className="navbar-nav">
       <li>
-        <a href="" className="nav-link">
+        <NavLink
+          exact
+          activeClassName="active-link"
+          to="/"
+          className="nav-link"
+        >
           Home
-        </a>
-        <a href="" className="nav-link">
+        </NavLink>
+        <NavLink
+          exact
+          activeClassName="active-link"
+          to="/calculator"
+          className="nav-link"
+        >
           Calculator
-        </a>
-        <a href="" className="nav-link">
+        </NavLink>
+        <NavLink
+          exact
+          activeClassName="active-link"
+          to="/quote"
+          className="nav-link"
+        >
           Quote
-        </a>
+        </NavLink>
       </li>
     </ul>
   </nav>
