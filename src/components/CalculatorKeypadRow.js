@@ -13,7 +13,7 @@ const KeypadRow = (props) => {
     <div className="calculator__keypad-row">
       {values.map((value) => (
         <button
-          className="calculator__keypad-key flex-center-center"
+          className="calculator__keypad-key flex-center-center number-font-family"
           type="button"
           key={value}
           onClick={clickHandler}

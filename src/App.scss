@@ -1,9 +1,18 @@
-.App {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+$primary-font-family: 'Lato', sans-serif;
+$number-font-family: 'Oswald', sans-serif;
+$blue-color: #283985;
+$yellow-color: #efed18;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font-family;
 }
 
 .flex-center-center {
@@ -12,9 +21,108 @@
   align-items: center;
 }
 
+.flex-sb-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-col-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.number-font-family.number-font-family {
+  font-family: $number-font-family;
+  font-size: 40px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: $blue-color;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+
+  .navbar-brand {
+    color: $yellow-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  .navbar-nav {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    margin-right: 1rem;
+
+    .nav-link {
+      color: $yellow-color;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      position: relative;
+      margin-left: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: $yellow-color;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        transition: 0.3s;
+      }
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .active {
+      background-color: $yellow-color;
+      color: $blue-color;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+
+    .nav-link + .nav-link {
+      &::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $yellow-color;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+      }
+    }
+  }
 }

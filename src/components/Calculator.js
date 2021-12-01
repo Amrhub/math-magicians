@@ -17,32 +17,37 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator flex-col-center">
-      <div className="calculator__display">
-        {operation == null
-          ? total || next || '0'
-          : `${total} ${operation} ${next == null ? ' ' : next}`}
+    <main className="calculator-container ">
+      <h2 className="calculator-container__heading">
+        Let&apos;s do some math!
+      </h2>
+      <div className="calculator flex-col-center">
+        <div className="calculator__display number-font-family">
+          {operation == null
+            ? total || next || '0'
+            : `${total} ${operation} ${next == null ? ' ' : next}`}
+        </div>
+        <div className="calculator__keypad">
+          <KeypadRow
+            values={['AC', '+/-', '%', '÷']}
+            callCalculate={callCalculate}
+          />
+          <KeypadRow
+            values={['7', '8', '9', 'x']}
+            callCalculate={callCalculate}
+          />
+          <KeypadRow
+            values={['4', '5', '6', '-']}
+            callCalculate={callCalculate}
+          />
+          <KeypadRow
+            values={['1', '2', '3', '+']}
+            callCalculate={callCalculate}
+          />
+          <KeypadRow values={['0', '.', '=']} callCalculate={callCalculate} />
+        </div>
       </div>
-      <div className="calculator__keypad">
-        <KeypadRow
-          values={['AC', '+/-', '%', '÷']}
-          callCalculate={callCalculate}
-        />
-        <KeypadRow
-          values={['7', '8', '9', 'x']}
-          callCalculate={callCalculate}
-        />
-        <KeypadRow
-          values={['4', '5', '6', '-']}
-          callCalculate={callCalculate}
-        />
-        <KeypadRow
-          values={['1', '2', '3', '+']}
-          callCalculate={callCalculate}
-        />
-        <KeypadRow values={['0', '.', '=']} callCalculate={callCalculate} />
-      </div>
-    </div>
+    </main>
   );
 };
 
