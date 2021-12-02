@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Calculator component renders correctly 1`] = `
+<main
+  className="calculator-container "
+>
+  <h2
+    className="calculator-container__heading"
+    data-testid="calculator-heading"
+  >
+    Let's do some math!
+  </h2>
+  <div
+    className="calculator flex-col-center"
+  >
+    <div
+      className="calculator__display number-font-family"
+      data-testid="display"
+    >
+      0
+    </div>
+    <div
+      className="calculator__keypad"
+    >
+      <div
+        className="calculator__keypad-row"
+      >
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div
+        className="calculator__keypad-row"
+      >
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
+      <div
+        className="calculator__keypad-row"
+      >
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="calculator__keypad-row"
+      >
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="calculator__keypad-row"
+      >
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="calculator__keypad-key flex-center-center number-font-family"
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Calculator CalculatorKeypadRow renders correctly 1`] = `
+<div
+  className="calculator__keypad-row"
+>
+  <button
+    className="calculator__keypad-key flex-center-center number-font-family"
+    onClick={[Function]}
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="calculator__keypad-key flex-center-center number-font-family"
+    onClick={[Function]}
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="calculator__keypad-key flex-center-center number-font-family"
+    onClick={[Function]}
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="calculator__keypad-key flex-center-center number-font-family"
+    onClick={[Function]}
+    type="button"
+  >
+    ÷
+  </button>
+</div>
+`;
