@@ -1,4 +1,71 @@
 import calculate, { isNumber } from '../calculate';
+import operate from '../operate';
+
+describe('operate.js', () => {
+  it('Operate("5","10","+") should return "15" ', () => {
+    const obj = { total: '5', next: '10', operation: '+' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe('15');
+  });
+
+  it('Operate("10","5","-") should return "5" ', () => {
+    const obj = { total: '10', next: '5', operation: '-' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe('5');
+  });
+
+  it('Operate("10","5","x") should return "50" ', () => {
+    const obj = { total: '10', next: '5', operation: 'x' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe('50');
+  });
+
+  it('Operate("10","5","÷") should return "2" ', () => {
+    const obj = { total: '10', next: '5', operation: '÷' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe('2');
+  });
+
+  it('Operate("10","0","÷") should return "Cant divide by 0." ', () => {
+    const obj = { total: '10', next: '0', operation: '÷' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe("Can't divide by 0.");
+  });
+
+  it('Operate("10","5","%") should return "0" ', () => {
+    const obj = { total: '10', next: '5', operation: '%' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe('0');
+  });
+
+  it('Operate("10","0","%") should return "Cant modulo by 0." ', () => {
+    const obj = { total: '10', next: '0', operation: '%' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe("Can't modulo by 0.");
+  });
+
+  it('Operate("10","0","*") should return "Unknown operation *" ', () => {
+    const obj = { total: '10', next: '0', operation: '*' };
+
+    const result = operate(obj.total, obj.next, obj.operation);
+
+    expect(result).toBe(`Unknown operation '${obj.operation}'`);
+  });
+});
 
 describe('calculate.js', () => {
   it('IsNumber() should return true if the input is a number', () => {
