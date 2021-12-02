@@ -7,28 +7,13 @@ const Navbar = () => (
 
     <ul className="navbar-nav">
       <li>
-        <NavLink
-          exact
-          activeClassName="active-link"
-          to="/"
-          className="nav-link"
-        >
+        <NavLink to="/" className="nav-link">
           Home
         </NavLink>
-        <NavLink
-          exact
-          activeClassName="active-link"
-          to="/calculator"
-          className="nav-link"
-        >
+        <NavLink to="/calculator" className="nav-link">
           Calculator
         </NavLink>
-        <NavLink
-          exact
-          activeClassName="active-link"
-          to="/quote"
-          className="nav-link"
-        >
+        <NavLink to="/quote" className="nav-link">
           Quote
         </NavLink>
       </li>
