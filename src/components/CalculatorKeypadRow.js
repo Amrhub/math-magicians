@@ -6,7 +6,7 @@ const KeypadRow = (props) => {
   const { callCalculate } = props;
 
   const clickHandler = (e) => {
-    const ButtonName = e.target.innerText;
+    const ButtonName = e.target.innerHTML;
     callCalculate(ButtonName);
   };
   return (

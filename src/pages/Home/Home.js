@@ -3,7 +3,7 @@ import './Home.scss';
 
 const Home = () => (
   <div className="home flex-col">
-    <h1>Welcome to our page!</h1>
+    <h1 data-testid="home-heading">Welcome to our page!</h1>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsa
       praesentium inventore earum! Eveniet architecto exercitationem, qui eos,

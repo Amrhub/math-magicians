@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote renders correctly 1`] = `
+<div
+  className="quote flex-col-center"
+>
+  <p
+    className="quote-text"
+    data-testid="quote"
+  >
+    Mathematics is not about numbers, equations, computations, or algorithms. It is about the way we think about numbers, equations, and the relationships between them.
+  </p>
+  <p
+    className="quote-author"
+  >
+    - Albert Einstein
+  </p>
+</div>
+`;

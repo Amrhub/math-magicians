@@ -18,11 +18,17 @@ const Calculator = () => {
 
   return (
     <main className="calculator-container ">
-      <h2 className="calculator-container__heading">
+      <h2
+        className="calculator-container__heading"
+        data-testid="calculator-heading"
+      >
         Let&apos;s do some math!
       </h2>
       <div className="calculator flex-col-center">
-        <div className="calculator__display number-font-family">
+        <div
+          className="calculator__display number-font-family"
+          data-testid="display"
+        >
           {operation == null
             ? total || next || '0'
             : `${total} ${operation} ${next == null ? ' ' : next}`}

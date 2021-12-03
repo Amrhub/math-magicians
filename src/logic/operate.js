@@ -26,5 +26,5 @@ export default function operate(numberOne, numberTwo, operation) {
       return "Can't modulo by 0.";
     }
   }
-  throw Error(`Unknown operation '${operation}'`);
+  return `Unknown operation '${operation}'`;
 }
