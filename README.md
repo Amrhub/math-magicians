@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Math Magicians - Calculator User Interface & functionality
+> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations & Read a math-related quote.
 
 ![screenshot](./app_screenshot.png)
 This is just a simple calculator user interface that I built using the [React](https://reactjs.org/) framework.
@@ -34,6 +34,12 @@ To run the project open folder (after extraction) or cloning then run these comm
 
 - GitHub: [@Amrhub](https://github.com/Amrhub/)
 - LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
+
+👤 **Nicolae Pop**
+
+- GitHub: [@nicupop729](https://github.com/nicupop729)
+- Twitter: [@nicupop729](https://twitter.com/nicupop729)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolae-pop/)
 
 ## 🤝 Contributing
 
