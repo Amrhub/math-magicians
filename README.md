@@ -7,10 +7,17 @@
 ![screenshot](./app_screenshot.png)
 This is just a simple calculator user interface that I built using the [React](https://reactjs.org/) framework.
 
+## Live Demo
+
+- [Heroku live](https://deploy-react-math-magician.herokuapp.com/)
+- [Netlify live](https://netlify.com/docs/functions/build-deploy/react)
+
 ## Built With
 
 - HTML, CSS, and JavaScript
 - [React](https://reactjs.org/)
+- [Jest](https://jestjs.io/)
+- [React testing library](https://testing-library.com/docs/react-testing-library/intro/)
 
 To get a local copy up and running follow these simple example steps.
 
@@ -27,6 +34,12 @@ or open terminal of path you want to install project and run this command <br>
 To run the project open folder (after extraction) or cloning then run these commands: <br>
 **`npm install`** to install all dependencies <br>
 **`npm start`** to start the application, you should see the application working at: `http://localhost:3000/`
+
+### Testing
+
+Tests include unit tests, user interaction tests, and snapshot tests.
+to test the application locally run: <br>
+**`npm test`** to run the tests
 
 ## Authors
 
