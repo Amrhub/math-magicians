@@ -10,7 +10,7 @@ This is just a simple calculator user interface that I built using the [React](h
 ## Live Demo
 
 - [Heroku live](https://deploy-react-math-magician.herokuapp.com/)
-- [Netlify live](https://netlify.com/docs/functions/build-deploy/react)
+- [Netlify live](https://math-magician-react.netlify.app/)
 
 ## Built With
 
