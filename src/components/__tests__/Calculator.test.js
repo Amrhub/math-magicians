@@ -32,7 +32,6 @@ describe('Calculator user interaction', () => {
     render(<Calculator />);
 
     userEvent.click(screen.getByText(/7/i));
-
     const display = screen.getByTestId('display');
 
     expect(display).toHaveTextContent(/7/i);
